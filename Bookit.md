@@ -8,17 +8,17 @@ Ayman Hamdi
 Aziz Lahlimi
 <br> <br><br>
 Proposition formelle
-
-Travail présenté à
-
+<br>
+Travail présenté à :
+<br>
 Nicolas Bourré
-
+<br><br>
 Dans le cadre du cours
-
+<br>
 Gestion de projets informatiques
-
+<br><br><br>
 Cegep de Shawinigan
-
+<br><br>
 04 février 2020
 </h2>
 </div>
