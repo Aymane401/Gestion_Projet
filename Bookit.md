@@ -20,6 +20,7 @@ Gestion de projets informatiques
 Cegep de Shawinigan
 <br><br>
 04 février 2020
+<br><br><br>
 </h2>
 </div>
 
