@@ -1,7 +1,6 @@
 
 
-
- <p style="font-family: times, serif; font-size:11pt; font-style:italic">
+<div  align="center">
 Ayman Hamdi
 
 &
@@ -21,7 +20,7 @@ Gestion de projets informatiques
 Cegep de Shawinigan
 
 04 février 2020
-</p>
+</div>
 
 
 
