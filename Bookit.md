@@ -1,5 +1,5 @@
 <div  align="center">
-  <p style="font-size:160%;">
+  <p style="font-size:1600%;">
 Ayman Hamdi
 
 &
