@@ -1,3 +1,4 @@
+<div align="center">
 Ayman Hamdi
 
 &
@@ -17,8 +18,8 @@ Gestion de projets informatiques
 Cegep de Shawinigan
 
 04 février 2020
-
-<div align="center"> # **Book-It** </div>
+</div>
+ # **Book-It** 
 
 Définition
 ==========
