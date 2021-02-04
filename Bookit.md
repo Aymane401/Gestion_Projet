@@ -1,4 +1,5 @@
-<div  style="font-size:8000%;">
+<div  align="center">
+  <p style="font-size:160%;">
 Ayman Hamdi
 
 &
@@ -18,6 +19,7 @@ Gestion de projets informatiques
 Cegep de Shawinigan
 
 04 février 2020
+</p>
 </div>
 
 
