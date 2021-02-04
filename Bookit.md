@@ -1,3 +1,23 @@
+Ayman Hamdi
+
+&
+
+Aziz Lahlimi
+
+Proposition formelle
+
+Travail présenté à
+
+Nicolas Bourré
+
+Dans le cadre du cours
+
+Gestion de projets informatiques
+
+Cegep de Shawinigan
+
+04 février 2020
+
 **Book-It**
 
 Définition
