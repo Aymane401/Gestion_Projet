@@ -8,7 +8,7 @@ Ayman Hamdi
 Aziz Lahlimi
 <br> <br><br>
 Proposition formelle
-<br>
+<br><br><br>
 Travail présenté à :
 <br>
 Nicolas Bourré
