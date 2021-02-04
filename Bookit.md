@@ -1,4 +1,4 @@
-<div align="center" font size="13">
+<div align="center" style="font-size:300%;">
 Ayman Hamdi
 
 &
