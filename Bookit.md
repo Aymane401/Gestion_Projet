@@ -18,7 +18,7 @@ Cegep de Shawinigan
 
 04 février 2020
 
-# **Book-It**
+<div align="center"> # **Book-It** </div>
 
 Définition
 ==========
