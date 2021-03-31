@@ -15,7 +15,7 @@ Nicolas Bourré
 <br><br>
 Dans le cadre du cours
 <br>
-Gestion de projets informatiques
+Gestion de Projets informatiques
 <br><br><br>
 Cegep de Shawinigan
 <br><br>
