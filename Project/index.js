@@ -1,15 +1,31 @@
 const mysql = require("mysql")
 const express = require("express")
+const router = require('./routes');
 const app = express()
 const bodyparser = require("body-parser")
+//var db=require('../database');
+//------------------>
+//app.use("/public", express.static(path.join(__dirname, "public")));
+
+exports.app = app;
+
+//app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(router);
+//------------------->
 
 app.use(bodyparser.json())
 
 let mysqlConnection = mysql.createConnection({
-    host : 'localhost',
+    host : '149.248.59.146',
     user : 'root',
-    password : 'root',
-    database : 'bookit',
+    password : 'licornes_alk(83y3R!!T',
+    //database : 'bookit',
+    database : 'hotel',
+    port : 6603,
     multipleStatements : true
 })
 
@@ -26,10 +42,50 @@ app.listen(3000, () => {
 
 //get all chambres in DB
 app.get('/chambres', (req, res) => {
-    mysqlConnection.query('SELECT * FROM chambres', (err, rows, fields) => {
+    mysqlConnection.query('SELECT * FROM chambre', (err, rows, fields) => {
+        if(!err){
+            console.log(rows)
+            //res.send(rows)
+            res.render("layouts/chambres.pug", {chambres: rows})
+        }
+        else
+        console.log(err)
+    })
+})
+
+
+//get all client in DB
+app.get('/client', (req, res) => {
+    mysqlConnection.query('SELECT * FROM client', (err, rows, fields) => {
+        if(!err){
+            console.log(rows)
+            //res.send(rows)
+            res.render("layouts/clients.pug", {clients: rows})
+        }
+        else
+        console.log(err)
+    })
+})
+
+//get all price in DB
+/*app.get('/prix', (req, res) => {
+    mysqlConnection.query('SELECT * FROM prix', (err, rows, fields) => {
         if(!err){
             console.log(rows)
             res.send(rows)
+        }
+        else
+        console.log(err)
+    })
+})*/
+
+//get all reservation in DB
+app.get('/reservation', (req, res) => {
+    mysqlConnection.query('SELECT * FROM reservation', (err, rows, fields) => {
+        if(!err){
+            console.log(rows)
+            //res.send(rows)
+            res.render("layouts/reservations.pug", {reservations: rows})
         }
         else
         console.log(err)
@@ -49,7 +105,7 @@ app.get('/chambres/:id', (req, res) => {
 })
 
 //delete a chambres from DB
-app.get('/chambres/:id', (req, res) => {
+app.delete('/chambres/:id', (req, res) => {
     mysqlConnection.query('DELETE FROM chambres WHERE ChambreID = ?', [req.params.id],(err, rows, fields) => {
         if(!err){
             //console.log(rows)
@@ -88,3 +144,4 @@ app.put('/chambres/', (req, res) => {
         console.log(err)
     })
 })
+
